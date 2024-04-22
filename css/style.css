@@ -7,22 +7,100 @@
 body {
   font-family: Montserrat, sans-serif;
   font-size: 62.5%;
+  background-color: #F7F6F2;
 }
+
+html{
+  scroll-behavior:smooth
+}
+
 
 /*---------------------GENERAL-----------------------------*/
-.main-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin: 2rem;
+.main-title { /* Titulo principal */
+  font-size: 2.8rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
 }
 
-.m-y {
-  margin: 0 5rem;
+.section-title { /* Titulo para sections */
+  font-size: 2.3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 700;
+}
+
+.alter-title{ /* Titulo pequeño de contraste */
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.m-y { /* Estandar de margenes */
+  margin: 0 7rem;
+}
+
+.p-y { /* Lo mismo pero version padding */
+  padding: 0 7rem;
+}
+
+.btn{ /* Estandar botones */
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 0;
+  background-color: transparent;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.primary-button{ /* Boton blanco */
+  border: 2px solid #fff;
+  color: #fff; 
+}
+
+.primary-button:hover{ 
+  background-color: #fff;
+  color: #000;
+}
+
+.secondary-button{ /* Boton negro */
+  border: 2px solid #000;
+  color: #000; 
+}
+
+.secondary-button:hover{
+  background-color: #000;
+  color: #fff;
+}
+
+.main-content, .content-section{ /* Centra vertical y horizontalmente, agrega espacio entre items */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.content-section{/* Puse los margenes por separado pq sino m-y los pisa*/
+  margin-top: 5rem; 
+  margin-bottom: 5rem;
+}
+
+.main-content p, .content-section p{ /* Regula los parrafos */
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+hr{ /* Linea decorativa */
+  border: 1px solid #000;
+  width: 5rem;
 }
 
 /*-----------------------HEADER--------------------------------*/
 header {
-  font-size: 1.5rem;
+  font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,36 +121,57 @@ nav ul li {
 
 .item-link {
   text-decoration: none;
-}
-
-.item-link:hover {
-  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
-    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
-    rgba(240, 46, 170, 0.05) 0px 25px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
 }
 
 /*-----------------------HOME-------------------------------*/
-.main-content p {
-  font-size: 1.5rem;
-  padding: 1rem;
-  text-align: center;
+
+.m-home{ /* Estilos especificos del main home */
+  min-height: 90vh;
+  color: #fff;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),url("../assets/img/hotelroom.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.search-section{ /* Busqueda */
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  background-color: #1E1E1E;
+}
+
+.search-section input{
+  background-color: transparent;
+  padding: 1rem ;
+  border: none;
 }
 
 .home-section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
-.card {
+.card { 
   width: 30%;
-  margin: 2rem;
-
+  /* margin: 2rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
-
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  flex: 0 1 18rem;
+  transition: all 0.3s;
+  background-color: #fff;
+}
+
+.card:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
 }
 
 .card img {
@@ -93,7 +192,48 @@ nav ul li {
   text-align: left;
 }
 
+/*------------------------INSTITUCIONAL-----------------------------*/
+
+.institutional-section{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  text-align: left;
+}
+
+.institutional-section:nth-child(odd){
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+.institutional-section:nth-child(odd) div{
+  padding: 0 2rem 0 7rem;
+}
+
+.institutional-section:nth-child(odd) div hr{
+  align-self: end;
+}
+
+.institutional-section figure{
+  width: 50%;
+  object-fit: cover;
+}
+
+.institutional-section div{
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  padding: 0 7rem 0 2rem;
+  font-size: 1.3rem;
+  gap: 1rem;
+}
+
+.institutional-section figure img{
+  width: 100%;
+}
+
 /*------------------------FOOTER-----------------------------*/
+
 footer {
   font-size: 1rem;
   display: flex;
@@ -115,7 +255,24 @@ footer ul li {
   margin: 1rem 0 1rem 1rem;
   padding: 0.5rem;
   font-weight: 500;
-
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
     rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+/*------------------------ANIMACIONES-----------------------------*/
+
+.underline{ /* El subrayado del nav */
+padding-bottom:0.5rem;
+  background-image: linear-gradient(#000 0 0);
+  background-position: 0 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition:
+    background-size 0.3s,
+    background-position 0s 0.3s;
+}
+
+.underline:hover {
+  background-position: 100% 100%;
+  background-size: 100% 2px;
 }

@@ -7,33 +7,63 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
-      <div class="logo">IMG-LOGO</div>
+      <div class="logo"><a href="index.html">IMG-LOGO</a></div>
       <nav>
         <ul>
-          <li><a class="item-link" href="">Opcional</a></li>
+          <li><a class="item-link underline" href="">Opcional</a></li>
           <li>
-            <a class="item-link" href="pages/institutional.html"
+            <a class="item-link underline" href="pages/institutional.html"
               >Institucional</a
             >
           </li>
-          <li><a class="item-link" href="pages/contact.html">Contacto</a></li>
+          <li>
+            <a class="item-link underline" href="pages/contact.html"
+              >Contacto</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="main-content m-y">
-      <h1 class="main-title">Titulo principal</h1>
-      <p>
-        Pequeño texto: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Ratione soluta eveniet recusandae veniam porro
+    <main class="main-content m-home p-y">
+      <h2 class="alter-title">Disfrutá de esta nueva experiencia</h2>
+      <h1 class="main-title">Tu escapada ideal comienza acá</h1>
+      <p class="m-y">
+        Te ofrecemos una amplia gama de opciones para que encuentres el lugar
+        perfecto para tu próxima aventura. ¡Explora nuestras opciones y reserva
+        hoy mismo para asegurarte una experiencia inolvidable!
       </p>
+      <a href="#explorar" class="btn primary-button">Explorar</a>
     </main>
+
+    <section class="search-section">
+      <input type="text" placeholder="Buscar..." />
+      <button class="btn primary-button">buscar</button>
+    </section>
+
+    <!-- Tengo dudas de si esto tendria que ir dentro de home section  -->
+    <section id="explorar" class="content-section m-y">
+      <h2 class="section-title">Estas en IDW. Estas en casa</h2>
+      <hr />
+      <p class="m-y">
+        Ya sea que estés planeando unas vacaciones relajantes en la playa, una
+        escapada romántica en la montaña o un viaje lleno de aventuras en la
+        ciudad, estamos aquí para hacer que tu experiencia sea inolvidable.
+      </p>
+    </section>
+    <!-- Fin duda -->
+
     <section class="home-section m-y">
       <article class="card">
         <figure>
@@ -70,7 +100,9 @@
         <p class="card-detail">Detalle 2</p>
         <p class="card-detail">Precio</p>
       </article>
+      <button class="btn secondary-button">Ver mas</button>
     </section>
+
     <footer>
       <div class="footer-text">
         <p>Texto derechos</p>
