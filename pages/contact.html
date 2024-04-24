@@ -17,11 +17,11 @@
       <div class="logo"><a href="../index.html">IMG-LOGO</a></div>
       <nav>
         <ul>
-          <li><a class="item-link" href="">Opcional</a></li>
+          <li><a class="item-link underline" href="">Opcional</a></li>
           <li>
-            <a class="item-link" href="institutional.html">Institucional</a>
+            <a class="item-link underline href="institutional.html">Institucional</a>
           </li>
-          <li><a class="item-link" href="contact.html">Contacto</a></li>
+          <li><a class="item-link underline" href="contact.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -29,8 +29,32 @@
       <h1 class="main-title">Titulo de la pagina contacto</h1>
       <p>
         Pequeño texto: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Ratione soluta eveniet recusandae veniam porro
+        Ratione soluta eveniet recusandae veniam porro      
       </p>
+
+      <div class="formulario">
+        <h2>Formulario de Contacto</h2>
+
+        <form action="#">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+
+            <label for="email"></label>
+
+            <fieldset>
+              <legend>Correo Electrónico:</legend>
+              <input class="form-input" type="email" id="email" name="email" required placeholder="Correo Electrónico">
+            </fieldset>
+            
+            
+
+            <label for="consulta">Consulta:</label>
+            <textarea class="form-input" id="consulta" name="consulta" required placeholder="Escribra su consulta..."></textarea>
+
+            <button class="btn secondary-button" type="submit" >Enviar</button>
+        </form>
+    </div>
+
     </main>
 
     <footer>
