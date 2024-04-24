@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,30 +26,30 @@
       </nav>
     </header>
     <main class="main-content m-y">
-      <h1 class="main-title">Titulo de la pagina contacto</h1>
+      <h1 class="main-title">Contacto</h1>
       <p>
-        Pequeño texto: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Ratione soluta eveniet recusandae veniam porro      
+        Escribinos tus dudas, consultas o sugerencias y nosotros nos contactaremos contigo tan pronto podamos para brindarte la ayudade que necesitas.
       </p>
 
       <div class="formulario">
         <h2>Formulario de Contacto</h2>
-
+        <br>
         <form action="#">
-            <label for="nombre">Nombre y Apellido:</label>
+          <fieldset>
+            <legend>Nombre y Apellido:</legend>
             <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
-
-            <label for="email"></label>
-
+          </fieldset>
+          <br>
             <fieldset>
               <legend>Correo Electrónico:</legend>
               <input class="form-input" type="email" id="email" name="email" required placeholder="Correo Electrónico">
-            </fieldset>
-            
-            
-
-            <label for="consulta">Consulta:</label>
+            </fieldset>            
+            <br>
+            <fieldset>
+              <legend>Consulta:</legend>
             <textarea class="form-input" id="consulta" name="consulta" required placeholder="Escribra su consulta..."></textarea>
+            </fieldset>
+            <br>          
 
             <button class="btn secondary-button" type="submit" >Enviar</button>
         </form>
