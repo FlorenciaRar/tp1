@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,20 +17,44 @@
       <div class="logo"><a href="../index.html">IMG-LOGO</a></div>
       <nav>
         <ul>
-          <li><a class="item-link" href="">Opcional</a></li>
+          <li><a class="item-link underline" href="">Opcional</a></li>
           <li>
-            <a class="item-link" href="institutional.html">Institucional</a>
+            <a class="item-link underline href="institutional.html">Institucional</a>
           </li>
-          <li><a class="item-link" href="contact.html">Contacto</a></li>
+          <li><a class="item-link underline" href="contact.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main class="main-content m-y">
-      <h1 class="main-title">Titulo de la pagina contacto</h1>
+      <h1 class="main-title">Contacto</h1>
       <p>
-        Pequeño texto: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-        Ratione soluta eveniet recusandae veniam porro
+        Escribinos tus dudas, consultas o sugerencias y nosotros nos contactaremos contigo tan pronto podamos para brindarte la ayudade que necesitas.
       </p>
+
+      <div class="formulario">
+        <h2>Formulario de Contacto</h2>
+        <br>
+        <form action="#">
+          <fieldset>
+            <legend>Nombre y Apellido:</legend>
+            <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+          </fieldset>
+          <br>
+            <fieldset>
+              <legend>Correo Electrónico:</legend>
+              <input class="form-input" type="email" id="email" name="email" required placeholder="Correo Electrónico">
+            </fieldset>            
+            <br>
+            <fieldset>
+              <legend>Consulta:</legend>
+            <textarea class="form-input" id="consulta" name="consulta" required placeholder="Escribra su consulta..."></textarea>
+            </fieldset>
+            <br>          
+
+            <button class="btn secondary-button" type="submit" >Enviar</button>
+        </form>
+    </div>
+
     </main>
 
     <footer>
