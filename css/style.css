@@ -98,17 +98,26 @@ hr{ /* Linea decorativa */
   width: 5rem;
 }
 
+.center-text{
+  text-align: center;
+}
+
 /*-----------------------HEADER--------------------------------*/
 header {
   font-size: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  position: sticky;
+  top: 0;
+  background-color: #F7F6F2;
+  width: 100%;
 }
 
-header .logo {
-  font-weight: 600;
+header .logo img{
+  width: 6rem;
 }
 
 nav ul {
