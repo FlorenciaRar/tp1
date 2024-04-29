@@ -7,19 +7,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
-      <div class="logo"><a href="index.html"><img src="assets/img/logo.webp" alt="Logo"></a></div>
+      <div class="logo">
+        <a href="index.html"><img src="assets/img/logo.webp" alt="Logo" /></a>
+      </div>
       <nav>
         <ul>
           <li><a class="item-link underline" href="">Opcional</a></li>
@@ -37,14 +41,16 @@
       </nav>
     </header>
     <main class="main-content m-home p-y">
-      <h2 class="alter-title">Disfrutá de esta nueva experiencia</h2>
-      <h1 class="main-title">Tu escapada ideal comienza acá</h1>
-      <p class="m-y">
+      <h2 class="alter-title fade-in-top">
+        Disfrutá de esta nueva experiencia
+      </h2>
+      <h1 class="main-title fade-in-bck">Tu escapada ideal comienza acá</h1>
+      <p class="fade-in-bottom">
         Te ofrecemos una amplia gama de opciones para que encuentres el lugar
         perfecto para tu próxima aventura. ¡Explora nuestras opciones y reserva
         hoy mismo para asegurarte una experiencia inolvidable!
       </p>
-      <a href="#explorar" class="btn primary-button">Explorar</a>
+      <a href="#explorar" class="btn primary-button fade-in-bottom">Explorar</a>
     </main>
 
     <section class="search-section">
@@ -55,48 +61,118 @@
     <section id="explorar" class="content-section m-y">
       <h2 class="section-title">Estas en IDW. Estas en casa</h2>
       <hr />
-      <p class="m-y">
+      <p>
         Ya sea que estés planeando unas vacaciones relajantes en la playa, una
         escapada romántica en la montaña o un viaje lleno de aventuras en la
         ciudad, estamos aquí para hacer que tu experiencia sea inolvidable.
       </p>
       <div class="home-section">
-      <article class="card">
-        <figure>
-          <img src="assets/img/casa1.webp" alt="" />
-          <figcaption>Detalle relacionado a la img</figcaption>
-        </figure>
-        <p class="card-detail">Detalle 2</p>
-        <p class="card-detail">Precio</p>
-      </article>
-
-      <article class="card">
-        <figure>
-          <img src="assets/img/interior3.webp" alt="" />
-          <figcaption>Detalle relacionado a la img</figcaption>
-        </figure>
-        <p class="card-detail">Detalle 2</p>
-        <p class="card-detail">Precio</p>
-      </article>
-
-      <article class="card">
-        <figure>
-          <img src="assets/img/casa3.webp" alt="" />
-          <figcaption>Detalle relacionado a la img</figcaption>
-        </figure>
-        <p class="card-detail">Detalle 2</p>
-        <p class="card-detail">Precio</p>
-      </article>
-
-      <article class="card">
-        <figure>
-          <img src="assets/img/casa4.webp" alt="" />
-          <figcaption>Detalle relacionado a la img</figcaption>
-        </figure>
-        <p class="card-detail">Detalle 2</p>
-        <p class="card-detail">Precio</p>
-      </article>
-    </div>
+        <article class="card">
+          <figure>
+            <img src="assets/img/casa1.webp" alt="Alojamiento" />
+            <figcaption class="availability">Reservado</figcaption>
+          </figure>
+          <div class="card-container">
+            <p class="card-category italic">Categoria</p>
+            <h6 class="card-title">Titulo del alojambiento</h6>
+            <p class="card-detail">Ubicacion</p>
+          </div>
+          <div class="card-details">
+            <div class="icon-container">
+              <img src="assets/img/bed-icon.webp" alt="Habitaciones" />
+              <p class="rooms">Habitaciones</p>
+            </div>
+            <p class="card-price bold">Precio</p>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="assets/img/casa2.webp" alt="Alojamiento" />
+          </figure>
+          <div class="card-container">
+            <p class="card-category italic">Categoria</p>
+            <h6 class="card-title">Titulo del alojambiento</h6>
+            <p class="card-detail">Ubicacion</p>
+          </div>
+          <div class="card-details">
+            <div class="icon-container">
+              <img src="assets/img/bed-icon.webp" alt="Habitaciones" />
+              <p class="rooms">Habitaciones</p>
+            </div>
+            <p class="card-price bold">Precio</p>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="assets/img/casa3.webp" alt="Alojamiento" />
+            <figcaption class="availability">Reservado</figcaption>
+          </figure>
+          <div class="card-container">
+            <p class="card-category italic">Categoria</p>
+            <h6 class="card-title">Titulo del alojambiento</h6>
+            <p class="card-detail">Ubicacion</p>
+          </div>
+          <div class="card-details">
+            <div class="icon-container">
+              <img src="assets/img/bed-icon.webp" alt="Habitaciones" />
+              <p class="rooms">Habitaciones</p>
+            </div>
+            <p class="card-price bold">Precio</p>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="assets/img/casa4.webp" alt="Alojamiento" />
+          </figure>
+          <div class="card-container">
+            <p class="card-category italic">Categoria</p>
+            <h6 class="card-title">Titulo del alojambiento</h6>
+            <p class="card-detail">Ubicacion</p>
+          </div>
+          <div class="card-details">
+            <div class="icon-container">
+              <img src="assets/img/bed-icon.webp" alt="Habitaciones" />
+              <p class="rooms">Habitaciones</p>
+            </div>
+            <p class="card-price bold">Precio</p>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="assets/img/casa5.webp" alt="Alojamiento" />
+            <figcaption class="availability">Reservado</figcaption>
+          </figure>
+          <div class="card-container">
+            <p class="card-category italic">Categoria</p>
+            <h6 class="card-title">Titulo del alojambiento</h6>
+            <p class="card-detail">Ubicacion</p>
+          </div>
+          <div class="card-details">
+            <div class="icon-container">
+              <img src="assets/img/bed-icon.webp" alt="Habitaciones" />
+              <p class="rooms">Habitaciones</p>
+            </div>
+            <p class="card-price bold">Precio</p>
+          </div>
+        </article>
+        <article class="card">
+          <figure>
+            <img src="assets/img/interior1.webp" alt="Alojamiento" />
+          </figure>
+          <div class="card-container">
+            <p class="card-category italic">Categoria</p>
+            <h6 class="card-title">Titulo del alojambiento</h6>
+            <p class="card-detail">Ubicacion</p>
+          </div>
+          <div class="card-details">
+            <div class="icon-container">
+              <img src="assets/img/bed-icon.webp" alt="Habitaciones" />
+              <p class="rooms">Habitaciones</p>
+            </div>
+            <p class="card-price bold">Precio</p>
+          </div>
+        </article>
+      </div>
       <button class="btn secondary-button">Ver mas</button>
     </section>
 
