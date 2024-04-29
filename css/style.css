@@ -192,6 +192,11 @@ nav ul li {
   background-color: transparent;
   padding: 1rem;
   border: none;
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+}
+.search-section input::placeholder {
+  color: #ccc;
 }
 
 .home-section {
