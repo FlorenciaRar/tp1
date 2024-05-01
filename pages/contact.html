@@ -9,52 +9,91 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
   </head>
   <body>
     <header>
-      <div class="logo"><a href="../index.html">IMG-LOGO</a></div>
+      <div class="logo">
+        <a href="../index.html"
+          ><img src="../assets/img/logo.webp" alt="Logo"
+        /></a>
+      </div>
       <nav>
         <ul>
           <li><a class="item-link underline" href="">Opcional</a></li>
           <li>
-            <a class="item-link underline href="institutional.html">Institucional</a>
+            <a class="item-link underline" href="institutional.html"
+              >Institucional</a
+            >
           </li>
-          <li><a class="item-link underline" href="contact.html">Contacto</a></li>
+          <li>
+            <a class="item-link underline" href="contact.html">Contacto</a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="main-content m-y">
-      <h1 class="main-title">Contacto</h1>
-      <p>
-        Escribinos tus dudas, consultas o sugerencias y nosotros nos contactaremos contigo tan pronto podamos para brindarte la ayudade que necesitas.
-      </p>
-
+    <main class="main-content">
+      <div class="banner m-contact">
+        <h1 class="main-title">Contacto</h1>
+      </div>
+      <div class="content-section m-y">
+        <h2 class="section-title">¿Necesitas saber más?</h2>
+        <hr />
+        <p class="m-y">
+          Escribinos tus dudas, consultas o sugerencias y nosotros nos
+          contactaremos contigo tan pronto podamos para brindarte la ayudade que
+          necesitas.
+        </p>
+      </div>
       <div class="formulario">
         <h2>Formulario de Contacto</h2>
-        <br>
+        <br />
         <form action="#">
           <fieldset>
             <legend>Nombre y Apellido:</legend>
-            <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Nombre y Apellido" required>
+            <input
+              class="form-input"
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Nombre y Apellido"
+              required
+            />
           </fieldset>
-          <br>
-            <fieldset>
-              <legend>Correo Electrónico:</legend>
-              <input class="form-input" type="email" id="email" name="email" required placeholder="Correo Electrónico">
-            </fieldset>            
-            <br>
-            <fieldset>
-              <legend>Consulta:</legend>
-            <textarea class="form-input" id="consulta" name="consulta" required placeholder="Escribra su consulta..."></textarea>
-            </fieldset>
-            <br>          
-
-            <button class="btn secondary-button" type="submit" >Enviar</button>
+          <br />
+          <fieldset>
+            <legend>Correo Electrónico:</legend>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              required
+              placeholder="Correo Electrónico"
+            />
+          </fieldset>
+          <br />
+          <fieldset>
+            <legend>Consulta:</legend>
+            <textarea
+              class="form-input"
+              id="consulta"
+              name="consulta"
+              required
+              placeholder="Escribra su consulta..."
+            ></textarea>
+          </fieldset>
+          <br />
+          <button class="btn secondary-button" type="submit">Enviar</button>
         </form>
-    </div>
-
+      </div>
     </main>
 
     <footer>
