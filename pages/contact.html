@@ -7,16 +7,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-
-      rel="stylesheet"/>
-      <script src="https://kit.fontawesome.com/20d5dfa82e.js" crossorigin="anonymous"></script><!--fontawesome -->
+      rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/20d5dfa82e.js"
+      crossorigin="anonymous"></script>
+    <!--fontawesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
-    
+      rel="stylesheet" />
+
     <link rel="stylesheet" href="../css/style.css" />
     <title>Contacto</title>
   </head>
@@ -29,7 +30,6 @@
       </div>
       <nav>
         <ul>
-          <li><a class="item-link underline" href="">Opcional</a></li>
           <li>
             <a class="item-link underline" href="institutional.html"
               >Institucional</a
@@ -43,7 +43,7 @@
     </header>
     <main class="main-content">
       <div class="banner m-contact">
-        <h1 class="main-title">Contacto</h1>
+        <h1 class="main-title fade-in-bck">Contacto</h1>
       </div>
       <div class="content-section m-y">
         <h2 class="section-title">¿Necesitas saber más?</h2>
@@ -66,8 +66,7 @@
               id="nombre"
               name="nombre"
               placeholder="Nombre y Apellido"
-              required
-            />
+              required />
           </fieldset>
           <br />
           <fieldset>
@@ -78,8 +77,7 @@
               id="email"
               name="email"
               required
-              placeholder="Correo Electrónico"
-            />
+              placeholder="Correo Electrónico" />
           </fieldset>
           <br />
           <fieldset>
@@ -89,8 +87,7 @@
               id="consulta"
               name="consulta"
               required
-              placeholder="Escribra su consulta..."
-            ></textarea>
+              placeholder="Escribra su consulta..."></textarea>
           </fieldset>
           <br />
           <button class="btn secondary-button" type="submit">Enviar</button>
@@ -99,21 +96,25 @@
     </main>
 
     <footer class="footer">
-      <div class="iconos">
-        <ul>
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-x-twitter"></i>
-        </ul>
-      </div>
+      <a href="../index.html" class="logo">
+        <img src="../assets/img/logo.webp" alt="Logo" />
+      </a>
 
-      <div class="logo-footer">IMG-LOGO</div>
-      <div class="contenedor">
-        <div class="linea"></div>
+      <div class="iconos">
+        <a href="https://boredbutton.com" target="_blank" class="tilt"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+        <a href="https://boredbutton.com" target="_blank" class="tilt"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="https://boredbutton.com" target="_blank" class="tilt"
+          ><i class="fa-brands fa-x-twitter"></i
+        ></a>
       </div>
+      <hr class="long-line" />
 
       <div class="links-footer">
-        <div class="columna1">
+        <div class="columna-footer">
           <ul>
             <li>Centro de ayuda</li>
             <li>¿Cómo funciona....?</li>
@@ -122,7 +123,7 @@
             <li>Aviso de privacidad</li>
           </ul>
         </div>
-        <div class="columna2">
+        <div class="columna-footer">
           <ul>
             <li>¿Cómo ser anfitrión?</li>
             <li>Recursos para anfitriones</li>
@@ -131,24 +132,14 @@
             <li>Trabaja con nosotros</li>
           </ul>
         </div>
-        <div class="columna3">
-          <div>
-            <p>¿Quéres recibir ofertas exclusivas en tu email?</p>
-          </div>
-          <div>
-            <div>
-
-            </div>
-            <div>
-              <input class= input type="mail" placeholder="Ingresá tu Email">
-              <a href="#explorar" class="btn primary-button">¡Quiero Recibirlas!</a>
-            </div>
-          </div>
+        <div class="columna-footer">
+          <p>¿Quéres recibir ofertas exclusivas en tu email?</p>
+          <form>
+            <input class="input" type="mail" placeholder="Ingresá tu Email" />
+            <button class="btn primary-button">¡Quiero Recibirlas!</button>
+          </form>
         </div>
       </div>
-
     </footer>
-
- 
   </body>
 </html>
