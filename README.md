@@ -1,6 +1,6 @@
 # tp1
 URL:
-https://florenciarar.github.io/tp1/pages/institutional.html
+https://florenciarar.github.io/tp1/index.html
 
 Integrantes:
 - Aquino, María Carla
