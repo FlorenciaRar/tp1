@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
@@ -99,7 +99,7 @@ html {
 .main-content,
 .content-section,
 .banner {
-  /* Centra vertical y horizontalmente, agrega espacio entre items */
+  /* Centra vertical y horizontalmente */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -118,7 +118,7 @@ html {
   /* Regula los parrafos */
   font-size: 1.5rem;
   text-align: center;
-  max-width: 50%;
+  max-width: 60%;
   text-wrap: pretty;
 }
 
@@ -319,9 +319,8 @@ nav ul li {
 /*------------------------FOOTER-----------------------------*/
 
 .footer {
-  background-color: #1E1E1E;
-  /* height: 300px; */
-  margin-top: 50px;
+  background-color: #1e1e1e;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,14 +328,14 @@ nav ul li {
   gap: 1.5rem;
 }
 
-.iconos{
+.iconos {
   display: flex;
   justify-content: center;
-  gap: 1rem
+  gap: 1rem;
 }
-.iconos a{
+.iconos a {
   text-decoration: none;
-  color: #fff
+  color: #fff;
 }
 .iconos i {
   font-size: 1.5rem;
@@ -351,10 +350,10 @@ nav ul li {
 hr.long-line {
   width: 80%; /* Ancho de la línea */
   height: 1px; /* Grosor de la línea */
-  background-color: rgb(124, 124, 124); /* Color de la línea */
+  background-color: rgb(125, 125, 125); /* Color de la línea */
 }
 
-.links-footer{
+.links-footer {
   color: white;
   display: flex;
   justify-content: space-between;
@@ -369,12 +368,12 @@ hr.long-line {
 }
 
 .links-footer:last-child p {
-  Font-weight: 600;
+  font-weight: 600;
   font-size: 1rem;
   margin-bottom: 1rem;
 }
 
-.input{
+.input {
   border: none;
   background-color: #fff;
   border-radius: 0;
@@ -383,8 +382,6 @@ hr.long-line {
   width: 250px;
   font-family: Montserrat, sans-serif;
 }
-
-
 
 /*------------------------ANIMACIONES-----------------------------*/
 
@@ -402,7 +399,7 @@ hr.long-line {
   background-position: 100% 100%;
   background-size: 100% 2px;
 }
-.tilt{
+.tilt {
   transition: all 0.3s;
 }
 .tilt:hover {
