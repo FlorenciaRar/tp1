@@ -329,10 +329,21 @@ nav ul li {
 }
 
 .iconos {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
+  list-style: none;
 }
+
+.iconos li {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+.iconos li:first-child {
+  margin-left: 0;
+}
+
+.iconos li:last-child {
+  margin-right: 0;
+}
+
 .iconos a {
   text-decoration: none;
   color: #fff;
@@ -558,4 +569,9 @@ fieldset {
 
 legend {
   margin-left: 10px;
+}
+
+.formulario > h2,
+.formulario fieldset {
+  margin-bottom: 1rem;
 }
