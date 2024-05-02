@@ -323,31 +323,99 @@ nav ul li {
 }
 
 /*------------------------FOOTER-----------------------------*/
+/*------------------------FOOTER-----------------------------*/
 
-footer {
-  font-size: 1rem;
+.footer {
+  background-color: #1E1E1E;
+  height: 300px;
+  margin-top: 50px;
+}
+
+.iconos{
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.iconos i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  margin-top: 20px;
+}
+
+.logo-footer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  color: white;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+}
+
+.linea {
+  width: 80%; /* Ancho de la línea */
+  height: 1px; /* Grosor de la línea */
+  background-color: rgb(124, 124, 124); /* Color de la línea */
+  margin-top: 20px;
+}
+
+.links-footer{
+  color: white;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin: 1rem;
+  margin-top: 40px;
+  margin-left: 150px;
+  margin-right: 150px;
+  
 }
 
-.footer-text p {
-  margin-bottom: 1rem;
-}
-
-footer ul {
+.links-footer li {
   list-style: none;
+  font-size: 0.7rem;
+  line-height: 1.5rem;
 }
 
-footer ul li {
-  display: inline-block;
-  margin: 1rem 0 1rem 1rem;
-  padding: 0.5rem;
-  font-weight: 500;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+.columna3 p {
+  Font-weight: 600;
+  font-size: 1rem;
+  line-height: 3rem;
 }
+
+.input{
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  margin-right: 15px;
+  height: 30px;
+  width: 250px;
+}
+
+.botón-quiero{
+  border-radius: 5px;
+  border: 2px solid white;
+  background-color: grey;
+  transition: all 0.3s;
+  color: White;
+  width: 180px;
+  height: 30px;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.botón-quiero:hover{
+  background-color: white;
+  color: grey;
+  border: 2px solid grey;
+}
+
 
 /*------------------------ANIMACIONES-----------------------------*/
 
